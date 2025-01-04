@@ -4,7 +4,7 @@ header{
 }
 
 body{
-    background-color:white;
+    background-color:#ffffff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -14,73 +14,115 @@ body{
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
 }
 
 /* try using a banner for the picure (like netfix thing)*/
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/gss-main1-1180x430.jpg");
+.banner-image {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Images/Good\ Shepherd\ Primary\ School\ \(2\).png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;  
 }
-  
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+* {
+    box-sizing: border-box;
   }
   
-  .hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
-    cursor: pointer;
+ 
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
   }
   
-  .hero-text button:hover {
-    background-color: #555;
-    color: white;
+  .row{margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
-  /* Try using differnt navbar*/
-  
-  /* The navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: lightblue;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    display: block;
-    color: black;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 16px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(Images/GSS\ LOGO\ Updated\ \(2\).png);
+    background-repeat: no-repeat;
+  }
+
+  .column2 {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
   }
   
-  /* Change background on mouse-over */
-  .navbar a:hover {
-    background: navy;
-    color: black;
+  .row2{margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
   }
- /* 
- .main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
+
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 16px;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+
+  #staff{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/staff.jpg);
+  }
+  #students{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/students.jpeg);
+  }
+  #alumni{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/graduation);
+  }
+  #sport{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/sports.avif);
+  }
+  /* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+button{
+ background-color: white;
+ border: none;
+ color:black ;
+ padding: 10px 24px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 15px;
+ border-radius: 12px;
+}
+
+
+button:hover {
+  background-color: navy;
+  color: white;
+}
